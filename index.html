@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>User Account <span>Dashboard</span></h1>
+    <section class="boxItems">
+        <div class="items1">
+            <h2>Deposit</h2>
+            <h4>$ <span id="depositTxt" > 00</span></h4>
+        </div>
+        <div class="items2">
+            <h2>Withdraw</h2>
+            <h4>$ <span id="withdrawTxt" > 00</span></h4>
+        </div>
+        <div class="items3">
+            <h2>Balance</h2>
+            <h4>$ <span id="balanceTxt" > 1200</span></h4>
+        </div>
+    </section>
+    <section class="inputItems">
+            <div class="input">
+                <input id="depositInput" type="text">
+                <button id="depositBtn" type="submit">Deposit</button>
+            </div>
+            <div class="input">
+                <input id="withdrawInput" type="text">
+                <button id="withdrawBtn" type="submit">Withdraw</button>
+            </div>
+    </section>
+</div>
+
+<section class="error_msg">
+    <div class="warning_style" id="warning_msg">
+        <p>Please Provide A Positive Value Number</p>
+        <span class="btn_style" id="warning_btn">Ok</span>
+       </div>
+</section>
+
+
+<footer class="footer_area">
+    <p>All Rights Reserved - 2022 | Design & Develop By <a href="https://github.com/AhshanHabib26">Ahshan Habib</a></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

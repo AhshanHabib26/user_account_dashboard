@@ -25,9 +25,11 @@ document.getElementById('withdrawBtn').addEventListener('click', function(){
 
         const withdrawInput = document.getElementById('withdrawInput');
         const withdrawInputValue = parseFloat(withdrawInput.value);
+        const totalAmount =document.getElementById('balanceTxt');
+        const totalAmountValue = parseFloat(totalAmount.innerText);
 
     
-        if( withdrawInputValue > 0){
+        if( withdrawInputValue > 0 && withdrawInputValue <= totalAmountValue){
             const withdrawText = document.getElementById('withdrawTxt')
             const withdrawTextValue = parseFloat(withdrawText.innerText)
             const totaWithdrawAmount = withdrawInputValue + withdrawTextValue;
